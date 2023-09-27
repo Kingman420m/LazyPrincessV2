@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🔔 BOT Updates 🤖', url='https://telegram.me/LazyDeveloper')
+                InlineKeyboardButton('🔔BOT UPDATES🤖', url='https://telegram.me/RuleNoo420')
             ],
             [
-                InlineKeyboardButton('⚡ Movie Updates ⚡', url=f"https://telegram.me/real_MoviesAdda1"),
+                InlineKeyboardButton('⚡MOVIE UPDATES⚡', url=f"https://telegram.me/original420s"),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -45,13 +45,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Movie Updates ⚡', url=f"https://telegram.me/real_MoviesAdda1"),
-            InlineKeyboardButton('🔔 BOT Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs🍿', url=f"https://t.me/original420s"),
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ🛸', url='https://t.me/f9devs')
             ],[
-             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
+             InlineKeyboardButton('ғᴇᴀᴛᴜʀᴇs⚙️', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ📡', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -70,7 +70,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 Join Updates Channel 🔥", url=invite_link.invite_link
+                    "🍿ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ🍿", url=invite_link.invite_link
                 )
             ]
         ]
@@ -79,25 +79,25 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton(" 🔄ᴛʀʏ ᴀɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton(" 🔄ᴛʀʏ ᴀɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**🥲ᴏɴʟʏ  ᴏᴜʀ  ᴄʜᴀɴɴᴇʟ  sᴜʙsᴄʀɪʙᴇʀ  ᴜsᴇ  ᴛʜɪs  ʙᴏᴛ  sᴏ  ᴊᴏɪɴ  ʜᴇʀᴇ👇**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Movie Updates ⚡', url=f"https://telegram.me/real_MoviesAdda1"),
-            InlineKeyboardButton('🔔 BOT Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs🍿', url=f"https://telegram.me/original420s"),
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ🛸', url='https://t.me/f9devs')
             ],[
-             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
+             InlineKeyboardButton('ғᴇᴀᴛᴜʀᴇs⚙️', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ📡', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
