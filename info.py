@@ -22,7 +22,7 @@ PORT = environ.get("PORT", "8080")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/68d28011b2bc356b5db01.png')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/e3c8ef879ff9bd79475ed.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1484670284').split()]
@@ -45,9 +45,9 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyPrincessSupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Movies Adaa™](https://t.me/real_MoviesAdda1)</b>⚡\n\nName: {file_caption} \n\n⚙️ <b>Size: </b><code>{file_size}</code>🔥  ↭ <b>Join Now [MoviesAdda™](https://t.me/real_MoviesAdda1)</b> ↭  🔥")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "⚡<b>File uploaded by [Movies Adaa™](https://t.me/real_MoviesAdda1)</b>⚡\n\nName: {file_caption} \n\n⚙️ <b>Size: </b><code>{file_size}</code>🔥  ↭ <b>Join Now [MoviesAdda™](https://t.me/real_MoviesAdda1)</b> ↭  🔥")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb: \n\n🏷 Title: {title}\n🌟 Rating : {rating}/10\n🎭 Genres: {genres}\n📆 Year: {year}\n⏰ Duration : {runtime}\n🎙️ Languages : {languages}\n🔖 Plot : {plot}\n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: {file_caption} \n\n<b>ᴊᴏɪɴ ɴᴏᴡ : [ᴏʀɪɢɪɴᴀʟ420](https://t.me/original420s)<b> \n<b>[**ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs**](https://t.me/f9devs)<b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ : {file_caption} \n\n<b>ᴊᴏɪɴ ɴᴏᴡ : [ᴏʀɪɢɪɴᴀʟ420](https://t.me/original420s)<b> \n<b>[**ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs**](https://t.me/f9devs)<b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb: \n\n🏷 Title: {title}\n🌟 Rating : {rating}/10\n🎭 Genres: {genres}\n📆 Year: {year}\n⏰ Duration : {runtime}\n🎙️ Languages : {languages}\n\n IF YOUR REQUESTED MOVIE IS NOT IN THE BELOW LIST THAN CLICK ON👇 REQUEST MY MOVIE BUTTON, ADMIN WILL ADD YOUR MOVIE SHORTLY")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -81,11 +81,11 @@ if SELF_DELETE == "True":
     SELF_DELETE = True
 
     # Download Tutorial Button #
-DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/LazyDeveloper"
+DOWNLOAD_TEXT_NAME = "📥REQUEST MY MOVIE📥"
+DOWNLOAD_TEXT_URL = "https://t.me/RuleNoo420"
 
    # Custom Caption Under Button #
-CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/LazyDeveloper"
+CAPTION_BUTTON = "GET UPDATES"
+CAPTION_BUTTON_URL = "https://t.me/original420s"
 
    # Auto Delete For Bot Sending Files #
